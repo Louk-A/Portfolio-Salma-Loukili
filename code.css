@@ -53,12 +53,12 @@ header span {
 header p {
   font-size: 1.2rem;
   margin-bottom: 10px;
-   color: rgb(255, 218, 205);
+   color: white;
 }
 
 blockquote {
   font-style: italic;
-  color: blanchedalmond;
+  color: white;
   margin: 20px 0;
   padding-left: 20px;
   border-left: 4px solid var(--highlight-color);
@@ -407,4 +407,56 @@ h2 {
 a{
 	color: #3b82f6;
 
+}
+
+
+/* Version mobile */
+@media only screen and (max-width: 768px) {
+ 
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Menu en colonne */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 0;
+    display: block;
+  }
+}
+
+  /* Version mobile : Menu en barre */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: flex; /* Menu en ligne */
+    flex-direction: row;
+    justify-content: space-around; /* Espacement équilibré */
+    align-items: center;
+    padding: 10px 0;
+    background-color: #1e3a8a; /* Couleur de fond */
+    margin: 0;
+    list-style-type: none; /* Enlève les puces */
+  }
+  nav ul li {
+    flex: 1; /* Chaque élément prend une part égale */
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white; /* Couleur du texte */
+    padding: 8px 0;
+  }
+  nav ul li a:hover {
+    color: #4930a4; /* Couleur au survol */
+    border-bottom: 2px solid #addff6; /* Effet souligné au survol */
+  }
 }

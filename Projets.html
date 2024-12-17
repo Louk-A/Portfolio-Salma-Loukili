@@ -7,20 +7,18 @@
     <link rel="stylesheet" href="code.css"/>
   </head>
   <body>
-
- 
     <nav>
       
       <ul>
    
-        <li><a href="index.html">Qui suis-je ?</a></li>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="Qui suis-je.html">Qui suis-je ?</a></li>
         <li><a href="Mon-parcours-scolaire.html">Mon parcours scolaire</a></li>
         <li><a href="skills.html">Compétences</a></li>
         <li><a href="Projets.html">Projets</a></li>
         <li><a href="contact.html">Me contacter</a></li>
       </ul>
     </nav>
-
 
     <section id="Projets">
       <h2>Projets</h2>
@@ -94,10 +92,213 @@
       </div>
     </section>
 
+  <section>
+    
+    <section id="Projets">
+      <h2>Projet para-universitaire - Rotaract ENCG Fès</h2>
+  
+    <p>Page Instagram du club humanitaire et social Rotaract mettant en avant des initiatives solidaires et citoyennes.</p>
+
+
+   
+    </div>
+    <div id="instagramCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="rota1.jpeg" class="d-block w-100" alt="Image 1">
+          <div class="carousel-caption d-none d-md-block">
+         
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="rota2.jpeg" class="d-block w-100" alt="Image 2">
+          <div class="carousel-caption d-none d-md-block">
+          
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="rota.jpeg" class="d-block w-100" alt="Image 3">
+          <div class="carousel-caption d-none d-md-block">
+          
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#instagramCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#instagramCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
+    </div>
+    <br>
+    <div class="intro-container">
+      <div class="intro-text">
+    <p>Dans le cadre de mon engagement para-universitaire, j'ai participé aux activités du club Rotaract ENCG Fès, un club humanitaire et social dédié à l’organisation d’initiatives solidaires et à la promotion des valeurs de citoyenneté. Ce projet a permis de mettre en lumière les campagnes humanitaires et les événements collaboratifs du club, tout en mobilisant la communauté estudiantine autour d'actions altruistes et inspirantes.</p>
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
      <!-- Footer -->
      <footer>
       <p>&copy; 2024 Salma Loukili</p>
       <a href="#top">Back to top</a>
   </footer>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .carousel-item img {
+      object-fit: contain;
+      width: 100%;
+      height: 500px; 
+    }
+ 
+  </style>
   </body>
 </html>
+<style>
+  .carousel-control-next-icon{
+      background-color: #1e3a8a;
+      border: #3b82f6;;
+      color: #1e3a8a; 
+  }
+.carousel-control-prev-icon{
+      background-color: #1e3a8a; 
+      border: #3b82f6;; 
+      color: #1e3a8a; 
+  }
+
+</style>
+<link rel="stylesheet" href="code.css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* Version mobile */
+@media only screen and (max-width: 768px) {
+  /* Navigation */
+  nav ul {
+    display: flex;
+    flex-direction: column; /* Menu en colonne */
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 0;
+    display: block;
+  }
+
+  /* Section projets */
+  .projects-container {
+    display: flex;
+    flex-direction: column; /* Cartes empilées */
+    align-items: center;
+    padding: 10px;
+  }
+  .project-card {
+    width: 100%; /* Utilise toute la largeur */
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  .project-image {
+    width: 100%; /* Image responsive */
+    height: auto;
+  }
+  .project-content h3 {
+    font-size: 1.2rem;
+  }
+  .project-content p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 0 10px;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+  }
+
+  /* Carrousel */
+  .carousel-item img {
+    height: 250px; /* Réduit la hauteur du carrousel */
+    object-fit: cover;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Texte d'introduction */
+  .intro-container {
+    padding: 10px;
+    text-align: center;
+  }
+  .intro-text p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+/* Version mobile : Menu en barre */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: flex; /* Menu en ligne */
+    flex-direction: row;
+    justify-content: space-around; /* Espacement équilibré */
+    align-items: center;
+    padding: 10px 0;
+    background-color: #1e3a8a; /* Couleur de fond */
+    margin: 0;
+    list-style-type: none; /* Enlève les puces */
+  }
+  nav ul li {
+    flex: 1; /* Chaque élément prend une part égale */
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: white; /* Couleur du texte */
+    padding: 8px 0;
+  }
+  nav ul li a:hover {
+    color: #4930a4; /* Couleur au survol */
+    border-bottom: 2px solid #addff6; /* Effet souligné au survol */
+  }
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: var(--padding);
+    text-align: center;
+}
+</style>
+
